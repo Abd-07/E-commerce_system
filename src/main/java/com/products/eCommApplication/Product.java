@@ -1,3 +1,5 @@
+package com.products.eCommApplication;
+
 public class Product {
     private Long id;
     private String name;

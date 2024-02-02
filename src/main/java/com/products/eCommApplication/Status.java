@@ -1,3 +1,5 @@
+package com.products.eCommApplication;
+
 public enum Status {
     ORDERED,
     DISPATCHED,

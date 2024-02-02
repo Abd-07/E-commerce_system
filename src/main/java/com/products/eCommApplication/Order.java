@@ -1,3 +1,5 @@
+package com.products.eCommApplication;
+
 public class Order {
     private Status status;
     public void setStatus(Status status) {

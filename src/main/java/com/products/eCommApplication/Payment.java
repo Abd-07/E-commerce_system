@@ -1,3 +1,5 @@
+package com.products.eCommApplication;
+
 public class Payment {
     private String card_number;
     private int cvc;
