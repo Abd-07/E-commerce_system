@@ -1,3 +1,5 @@
+package com.products.eCommApplication;
+
 public class Item {
     private String name;
     private String color;

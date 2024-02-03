@@ -45,7 +45,7 @@ public class ProductController {
     }
 
     @DeleteMapping(path="deleteProduct/{productId}")
-    public ResponseMessage deleteCountry(@PathVariable int productId) {
+    public ResponseMessage deleteProduct(@PathVariable int productId) {
         return ProductService.deleteProduct(productId);
     }
 }
