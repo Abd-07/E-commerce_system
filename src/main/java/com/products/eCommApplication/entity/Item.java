@@ -1,4 +1,4 @@
-package com.products.eCommApplication;
+package com.products.eCommApplication.entity;
 
 public class Item {
     private String name;

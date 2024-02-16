@@ -1,5 +1,7 @@
-package com.products.eCommApplication;
+package com.products.eCommApplication.controller;
 
+import com.products.eCommApplication.entity.Product;
+import com.products.eCommApplication.service.ResponseMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +18,7 @@ import java.util.List;
 @RestController
 public class ProductController {
     @Autowired
-    ProductService ProductService;
+    com.products.eCommApplication.entity.ProductService ProductService;
 
     @GetMapping(path="/getProducts")
     @ResponseBody

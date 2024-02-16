@@ -1,5 +1,6 @@
-package com.products.eCommApplication;
+package com.products.eCommApplication.entity;
 
+import com.products.eCommApplication.entity.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class ProductService {
         ProductMap.put(3, product3);
     }
 
-    HashMap<Integer,Product> ProductMap = new HashMap<Integer,Product>();
+    HashMap<Integer, Product> ProductMap = new HashMap<Integer,Product>();
     Product product1 = new Product(1L,"Laptop",1200);
     Product product2 = new Product(2L,"Phone",300);
     Product product3 = new Product(3L,"Calculator", 15);
@@ -46,7 +47,7 @@ public class ProductService {
         return ProductMap.get(maxId);
     }
 
-    public Product updateProduct(Product updatedProduct) {
+    public Product updateProduct(long updatedProduct) {
         ProductMap.put(Math.toIntExact(updatedProduct.getId(),updatedProduct));
         return ProductMap.get(updatedProduct.getId());
     }
